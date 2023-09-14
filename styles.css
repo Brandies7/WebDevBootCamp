@@ -1,0 +1,19 @@
+h1{
+    color: #5fcffc;
+    background-color: rgb(89, 151, 0);
+    text-align: center;
+    text-decoration: underline wavy;
+    font-weight: bolder;
+    letter-spacing: 15px;
+    font-family: Verdana;
+}
+
+button{
+    color: magenta;
+    background-color: cyan;
+}
+
+p{
+    color: olive;
+    background: orange;
+}

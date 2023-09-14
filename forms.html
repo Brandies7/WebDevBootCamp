@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+
+    <form action="">
+      <p>
+        <label for="username">Enter a Username</label>
+        <input
+          id="username"
+          type="text"
+          placeholder="Username"
+          name="username"
+        />
+      </p>
+      <p>
+        <label for="password">Enter a Password</label>
+        <input
+          id="password"
+          type="password"
+          placeholder="password"
+          name="password"
+        />
+      </p>
+      <p>
+        <label for="color">Pick a Color</label>
+        <input id="color" type="color" name="color" />
+      </p>
+      <p>
+        <label for="number">Enter a Number</label>
+        <input id="number" type="number" placeholder="number" name="number" />
+      </p>
+      <button>Submit</button>
+    </form>
+    <h2>Hijacking Searches</h2>
+    <h3>Search Reddit</h3>
+    <form action="https://www.reddit.com/search">
+      <input type="text" name="q" />
+      <button>Search Reddit</button>
+    </form>
+    <h3>Search Google</h3>
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" />
+      <button>Google Search</button>
+    </form>
+    <h3>Search YouTube</h3>
+    <form action="https://www.youtube.com/search">
+      <input type="text" name="search_query" id="" />
+      <button>Search YouTube</button>
+    </form>
+
+    <h2>More Inputs</h2>
+    <form action="/birds">
+      <input type="checkbox" name="agree_tos" id="agree" checked />
+      <label for="agree">I agree to everything</label>
+      <p>
+        <label for="xs">XS:</label>
+        <input type="radio" name="size" id="xs" value="xs" />
+        <label for="s">S</label>
+        <input type="radio" name="size" id="s" value="s" />
+        <label for="m">M</label>
+        <input type="radio" name="size" id="m" value="m" />
+      </p>
+      <p>
+        <label for="meal">Please Select an Entree</label>
+        <select name="meal" id="meal">
+          <optioin value="fish">Fish</optioin>
+          <optioin value="veg">Vegetarian</optioin>
+          <optioin value="steak">Steak</optioin>
+        </select>
+      </p>
+      <p>
+        <label for="cheese">Amount of Cheese</label>
+        <input
+          type="range"
+          name="cheese_level"
+          id="cheese"
+          min="1"
+          max="100"
+          step="5"
+          value="50"
+        />
+      </p>
+
+      <p>
+        <label for="requests">Any Special Requests</label>
+        <textarea
+          name="requests"
+          id="requests"
+          cols="30"
+          rows="10"
+          placeholder="Type Something Here"
+        ></textarea>
+      </p>
+      <button>Submit</button>
+
+      <h2>Validations Demo</h2>
+      <form action="/dummy">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required />
+        <p>
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" minlength="5" maxlength="20" required>
+        </p>
+
+        <p>
+          <input type="email">
+          <input type="url">
+          <input type="tel">
+        </p>
+        <button>Submit</button>
+      </form>
+    </form>
+  </body>
+</html>
